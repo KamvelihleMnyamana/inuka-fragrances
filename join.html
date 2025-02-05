@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join INUKA Today</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5faff;
+        color: #333;
+      }
+      a {
+        text-decoration: none;
+        color: #ff5722;
+      }
+      a:hover {
+        color: #ff9800;
+      }
+
+      /* Header */
+      header {
+        background: linear-gradient(to right, #1086da, #17a7d7),
+          url("image1.jpg") no-repeat center center/cover;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        position: relative;
+      }
+      header:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      header h1,
+      header p {
+        position: relative;
+        z-index: 1;
+      }
+      header h1 {
+        font-size: 3.5rem;
+        margin: 0;
+      }
+      header p {
+        font-size: 1.5rem;
+      }
+
+      /* Content Section */
+      .content {
+        max-width: 900px;
+        margin: 2rem auto;
+        text-align: center;
+      }
+      .content h2 {
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+        color: #ff4081;
+      }
+      .content p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        color: #616161;
+      }
+
+      /* Image Grid Section */
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      .image-grid img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Form Section */
+      .form-container {
+        background: #ffecb3;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        text-align: left;
+        max-width: 900px;
+        margin: 0 auto 2rem;
+      }
+      form label {
+        font-weight: bold;
+        color: #4a4a4a;
+      }
+      form input,
+      form textarea,
+      form button {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 0.8rem;
+        border: 1px solid #ff9800;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+      form input:focus,
+      form textarea:focus {
+        outline: none;
+        border-color: #ff5722;
+        box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+      }
+      form button {
+        background: #ff5722;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        transition: background 0.3s ease, transform 0.2s ease;
+      }
+      form button:hover {
+        background: #e64a19;
+        transform: scale(1.05);
+      }
+
+      /* Footer */
+      footer {
+        background: linear-gradient(to right, #2196f3, #03a9f4);
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+      }
+      footer p {
+        margin: 0;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Step into Success with Confidence and Style</h1>
+    </header>
+
+    <div class="content">
+      <h2>Why Join Us?</h2>
+      <p>
+        INUKA offers endless opportunities for growth, success, and financial
+        independence.
+      </p>
+
+      <p>
+        Are you ready to take control of your future and build a business you
+        can be proud of? Fill out the form below to get started!
+      </p>
+    </div>
+
+    <!-- Form Section -->
+    <div class="form-container">
+      <h2>Join INUKA Now</h2>
+      <form action="submit-form.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Full Name"
+          required
+        />
+
+        <label for="email">Email Address:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Your Phone Number"
+          required
+        />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Why do you want to join INUKA?"
+          required
+        ></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Kam Mnyamana. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
