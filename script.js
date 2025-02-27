@@ -73,3 +73,13 @@ window.addEventListener("scroll", () => {
 backToTopButton.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+//Nav Links
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("nav.html") // Fetch the navigation file
+        .then(response => response.text()) // Convert response to text
+        .then(data => {
+            document.getElementById("nav-placeholder").innerHTML = data; // Insert nav into placeholder
+        })
+        .catch(error => console.error("Error loading navigation:", error));
+});
